@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Haggai Maron
+name: Deep Learning on Irregular Data
 
 # Short bio or description (displayed in the header)
-description: Haggai Maron's blog
+description: Random thoughts on graph, hyper-graph, point-cloud and mesh learning,
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://www.wisdom.weizmann.ac.il/~haggaim/images/me.jpg
+avatar: https://skymind.ai/images/wiki/graph1.jpg
 
 #
 # Flags below are optional
