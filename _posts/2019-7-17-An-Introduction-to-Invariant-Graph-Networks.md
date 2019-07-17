@@ -74,8 +74,6 @@ In the general case, solving the fixed point equations for  reduces to a fixed p
 
 **Remarks.** (Maron et al., 2019a) can be seen as a generalization of Deep Sets (Zaheer et al., 2017, Qi et al,. 2017) that dealt with the case of node features and (Hartford et al., 2018) that studied equivariant layers for interaction between multiple sets. (Kondor et al., 2018) also identified several linear and quadratic equivariant operators and showed that the resulting network can achieve excellent results on popular graph learning benchmarks.
 
-Written by Haggai Maron and Yaron Lipman, *Weizmann Institute of Science*
-
 ## Bibliography
 
 (Cybenko, 1989) Cybenko, G. (1989). Approximation by superpositions of a sigmoidal function. Mathematics of control, signals and systems, 2(4):303–314. 
@@ -99,3 +97,4 @@ Written by Haggai Maron and Yaron Lipman, *Weizmann Institute of Science*
 (Zaheer et al., 2017) Zaheer, M., Kottur, S., Ravanbakhsh, S., Poczos, B., Salakhutdinov, R. R., and Smola, A. J. (2017). Deep sets. In Advances in Neural Information Processing Systems, pages 3391–3401
 
 
+Written by Haggai Maron and Yaron Lipman, *Weizmann Institute of Science*

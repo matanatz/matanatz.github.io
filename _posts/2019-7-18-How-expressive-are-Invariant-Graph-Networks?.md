@@ -11,7 +11,7 @@ In (Maron et al., 2019c) we show that -IGNs are tightly related to a hierarchy o
 
 This direction follows the prominent works of (Morris et al., 2019; Xu et al., 2019) that prove that message passing neural networks can discriminate between non-isomorphic graphs as well as the 1-WL. Sadly, 1-WL is not strong enough and, for example, cannot discriminate regular graphs such as the pair of graphs in the figure. [Morris et al., 2019] also suggests a message passing algorithm directly on -tuples to achieve -WL discrimination power. 
 
-![Image](https://haggaim.github.io/images/2019-7-17/image226.png)
+![Image](https://haggaim.github.io/images/2019-7-17/image250.png)
 
 In (Maron et al., 2019) we prove that -IGNs can discriminate graphs at least as good as the -WL algorithm, for every . For example, 3-WL already discriminates the pair regular graphs mentioned above.
 
@@ -25,9 +25,8 @@ Let us provide some intuition as to why matrix multiplication improves expressiv
 
 ## Summary of the IGN expressiveness
 The following figure illustrates the expressiveness results for IGNs. It provides an overview of the main tradeoffs between efficiency and approximation power.
-![Image](https://haggaim.github.io/images/2019-7-17/image252.png)
+![Image](https://haggaim.github.io/images/2019-7-17/image282.png)
 
-Written by Haggai Maron and Yaron Lipman, *Weizmann Institute of Science*
 
 ## Bibliography
 
@@ -46,3 +45,5 @@ Written by Haggai Maron and Yaron Lipman, *Weizmann Institute of Science*
 (Morris et al., 2018) Morris, C., Ritzert, M., Fey, M., Hamilton, W. L., Lenssen, J. E., Rattan, G., and Grohe, M. (2018). Weisfeiler and leman go neural: Higher-order graph neural networks. arXiv preprint arXiv:1810.02244. 
 
 (Xu et al., 2019) Xu, K., Hu, W., Leskovec, J., and Jegelka, S. (2019). How powerful are graph neural networks? In International Conference on Learning Representations. 
+
+Written by Haggai Maron and Yaron Lipman, *Weizmann Institute of Science*
