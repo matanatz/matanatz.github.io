@@ -5,10 +5,9 @@ The goal of this note is presenting a family of neural network architectures sui
 
 ![Image](https://haggaim.github.io/images/2019-7-17/image001.png)
 
-Image credit: hypergraph - Wikipedia d
+Image credit: hypergraph - Wikipedia
 
-The main idea (see right image)  is to adapt the concept of image convolutions, as a means of
-dramatically reducing the number of parameters in a neural network, to graph and hypergraph data. In more detail, translations of images are transformations  that do not change the image
+The main idea (see right image)  is to adapt the concept of image convolutions, as a means of dramatically reducing the number of parameters in a neural network, to graph and hypergraph data. In more detail, translations of images are transformations  that do not change the image
 content, see e.g., the image above. Hence, most functions  one is interested to learn on images, like image classification, will be invariant to translations, namely will satisfy  for all translations , where  represents the image, and  the application of the translation  to the image.  
 
 ![Image](https://haggaim.github.io/images/2019-7-17/image005.png)
