@@ -1,19 +1,395 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<title>Haggai's Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--
+<meta name="description" content="Haggai's web page" />
+<meta name="author" content="tamarillo" />
+-->
+<!-- favicons -->
+<!-- <link rel="shortcut icon" href="images/templatemo_favicon.ico"> -->
+<!-- bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<!-- fancybox CSS -->
+<link href="css/jquery.lightbox.css" rel="stylesheet" />
+<!-- flex slider CSS -->
+<link href="css/flexslider.css" rel="stylesheet" />
+<!-- custom styles for this template -->
+<link href="css/templatemo_style.css" rel="stylesheet" />
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-3 hidden-xs"></div>
+            <div class="col-xs-3 col-xs-offset-20 visible-xs">
+                <a href="#" id="mobile_menu"><span class="glyphicon glyphicon-align-justify"></span></a>
+            </div>
+            <div class="col-xs-24 visible-xs" id="mobile_menu_list">
+                <ul>
+					<li><a href="#templatemo_about">About</a></li>
+                    <!-- <li><a href="#templatemo_slideshow">Slideshow</a></li> -->
+                    <li><a href="#templatemo_publications">Publications</a></li>
+                </ul>
+            </div>
+            <div class="col-md-16 col-sm-18 hidden-xs" id="templatemo-nav-bar">
+                <ul class="nav navbar-right">
+					<li><a href="#templatemo_about">About</a></li>
+                    <!-- <li><a href="#templatemo_slideshow">Slideshow</a></li> -->
+                    <li><a href="#templatemo_publications">Publications</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header><!-- end of templatemo_header -->
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<section id="templatemo_about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>	
+            <div id="my_photo" class="col-md-4 col-sm-7 col-xs-24">
+                <img src="images/me.jpg" alt="image 1"/>
+            </div>
+            <div class="col-md-1"></div>	
+            <div class="col-md-16">
+                <h2>Haggai Maron</h2>
+				<p>
+				I am a PhD student at the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science under the supervision of 
+				<a href="http://www.wisdom.weizmann.ac.il/~ylipman/">Prof. Yaron Lipman</a>.
+				<br>
+				My main fields of interest are machine learning, optimization and shape analysis. 
+                More specifically I am working on applying deep learning to irregular domains (e.g., graphs, point clouds, and surfaces) and graph/shape matching problems. 
+                <br>
+                I serve as a reviewer for NeurIPS, ICCV, SIGGRAPH, SIGGRAPH Asia, ACM TOG, JAIR, TVCG and SGP.
+                </p>
+				<p>
+				<b>Email:</b> haggai.maron (at) weizmann.ac.il, <a href="https://scholar.google.co.il/citations?user=4v8uJrIAAAAJ">Google scholar page</a>, <a href="https://github.com/Haggaim">GitHub page</a><br>
+                    
+				</p>
+            </div>
+        </div><!-- end of row -->
+    </div> 
+</section><!-- end of templatemo_about -->
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
 
+
+<section id="templatemo_publications">
+    <div class="container">
+		<hr>
+        <div class="row">
+            <h1>Publications</h1>
+        </div>
+		
+		
+		</div>
+ <!--provably powerful -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/powerful_graph/2019_powerful_gnn_.png" alt="">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>Provably Powerful Graph Networks	</h2>
+                <p>             
+                Haggai Maron*, Heli Ben-Hamu*, Hadar Serviansky*, Yaron Lipman (*equal contribution)<br>
+                <i> Technical report 2019 </i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="Recently, the Weisfeiler-Lehman (WL) graph isomorphism test was used to measure the expressive power of graph neural networks (GNN). It was shown that the popular message passing GNN cannot distinguish between graphs that are indistinguishable by the 1-WL test (Morris et al., 2018; Xu et al., 2019). Unfortunately, many simple instances of graphs are indistinguishable by the 1-WL test. In search for more expressive graph learning models we build upon the recent k-order invariant and equivariant graph neural networks (Maron et al., 2019a,b) and present two results: First, we show that such k-order networks can distinguish between non-isomorpic graphs as good as the k-WL tests, which are provably stronger than the 1-WL test for k > 2. This makes these models strictly stronger than message passing models. Unfortunately, the higher expressiveness of these models comes with a computational cost of processing high order tensors. Second, setting our goal at building a provably stronger, simple and scalable model we show that a reduced 2-order network containing just scaled identity operator, augmented with a single quadratic operation (matrix multiplication) has a provable 3-WL expressive power. Differently put, we suggest a simple model that interleaves applications of standard Multilayer-Perceptron (MLP) applied to the feature dimension and matrix multiplication. We validate this model by presenting state of the art results on popular graph classification and regression tasks. To the best of our knowledge, this is the first practical invariant/equivariant model with guaranteed 3-WL expressiveness, strictly stronger than message passing models. "> Abstract</a>
+                <a href="https://arxiv.org/abs/1905.11136" class="btn btn-default">Arxiv </a>        
+            </div>
+        </div><!-- end of row -->
+     <!--levelsets -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/level_sets/2019_neural_levelsets.png" alt="">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>Controlling Neural Level Sets	</h2>
+                <p>             
+                Matan Atzmon*, Niv Haim*, Lior Yariv, Ofer Israelov, Haggai Maron, Yaron Lipman (*equal contribution)<br>
+                <i>  </i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="The level sets of neural networks represent fundamental properties such as decision boundaries of classifiers and are used to model non-linear manifold data such as curves and surfaces. Thus, methods for controlling the neural level sets could find many applications in machine learning. In this paper we present a simple and scalable approach to directly control level sets of a deep neural network. Our method consists of two parts: (i) sampling of the neural level sets, and (ii) relating the samples’ positions to the network parameters. The latter is achieved by a sample network that is constructed by adding a single fixed linear layer to the original network. In turn, the sample network can be used to incorporate the level set samples into a loss function of interest. We have tested our method on three different learning tasks:  raining networks robust to adversarial attacks, improving generalization to unseen data, and curve and surface reconstruction from point clouds. Notably, we increase robust accuracy to the level of standard classification accuracy in off-the-shelf networks, improving it by 2% in MNIST and 27% in CIFAR10 compared to state-of-the-art methods. For surface reconstruction, we produce high fidelity surfaces directly from raw 3D point clouds."> Abstract</a>
+                <a href="https://arxiv.org/abs/1905.11911" class="btn btn-default">Arxiv </a>        
+            </div>
+        </div><!-- end of row -->
+		
+				
+		
+    <!--universality -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/universality/rep2.png" alt="">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>On the Universality of Invariant Networks</h2>
+                <p>             
+                Haggai Maron, Ethan Fetaya, Nimrod Segol, Yaron Lipman<br>
+                <i> International Conference on Machine Learning (ICML) 2019 </i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="Constraining linear layers in neural networks to respect symmetry transformations from a group $G$ is a common design principle for invariant networks that has found many applications in machine learning. In this paper, we consider a fundamental question that has received little attention to date: Can these networks approximate any (continuous) invariant function? 	We tackle the rather general case where $G\leq S_n$ (an arbitrary subgroup of the symmetric group) that acts on $\R^n$ by permuting coordinates. This setting includes several recent popular invariant networks. We present two main results: First, $G$-invariant networks are universal if high-order tensors are allowed. Second, there are groups $G$ for which higher-order tensors are unavoidable for obtaining universality. $G$-invariant networks consisting of only first-order tensors are of special interest due to their practical value. We conclude the paper by proving a necessary condition for the universality of $G$-invariant networks that incorporate only first-order tensors."> Abstract</a>
+                <a href="https://arxiv.org/abs/1901.09342" class="btn btn-default">Arxiv </a> 
+                <a href="projects/universality/poster.pdf" class="btn btn-default">Poster </a> 
+                
+            </div>
+        </div><!-- end of row -->
+<!--general covers -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/general_covers/web_img.png" alt="">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>Surface Networks via General Covers</h2>
+                <p>             
+                Niv Haim*, Nimrod Segol*, Heli Ben-Hamu, Haggai Maron, Yaron Lipman (*equal contribution)<br>
+                <i>Technical Report 2019 </i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="Developing deep learning techniques for geometric data is an active and fruitful research area. This paper tackles the problem of sphere-type surface learning by developing a novel surface-to-image representation. Using this representation we are able to quickly adapt successful CNN models to the surface setting. The surface-image representation is based on a covering map from the image domain to the surface. Namely, the map wraps around the surface several times, making sure that every part of the surface is well represented in the image. Differently from previous surface-to-image representations we provide a low distortion coverage of all surface parts in a single image. We have used the surface-to-image representation to apply standard CNN models to the problem of semantic shape segmentation and shape retrieval, achieving state of the art results in both."> Abstract</a>
+                <a href="https://arxiv.org/pdf/1812.10705.pdf" class="btn btn-default">Arxiv </a>        
+        </div>
+        </div><!-- end of row -->
+    
+    <!--GRAPH -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/Invariant_and_equivariant_graph_networks/graph.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>Invariant and Equivariant Graph Networks</h2>
+                <p>             
+                Haggai Maron, Heli Ben-Hamu, Nadav Shamir and Yaron Lipman<br>
+                <i>International Conference on Learning Representations (ICLR) 2019 </i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="Invariant and equivariant networks have been successfully used for learning images, sets, point clouds, and graphs. A basic  challenge in developing such networks is finding the maximal collection of invariant and equivariant linear layers. Although this question is answered for the first three examples (for popular transformations, at-least), a full characterization of invariant and equivariant linear layers for graphs is not known.   In this paper, we provide a characterization of all permutation invariant and equivariant linear layers for (hyper-)graph data, and show that their dimension, in case of edge-value graph data, is 2 and 15, respectively. More generally, for graph data defined on k-tuples of nodes, the dimension is the k-th and 2k-th Bell numbers. Orthogonal bases for the layers are computed, including generalization to multi-graph data. The constant number of basis elements and their characteristics allow successfully applying the networks to different size graphs. From the theoretical point of view, our results generalize and unify recent advancement in equivariant deep learning.  Applying these new linear layers in a simple deep neural network framework is shown to achieve comparable results to state-of-the-art and to have better expressivity than previous invariant and equivariant bases."> Abstract</a>
+                <a href="https://arxiv.org/pdf/1812.09902.pdf" class="btn btn-default">  Arxiv </a>        
+                <a href="https://github.com/Haggaim/InvariantGraphNetworks" class="btn btn-default">GitHub</a>
+                <a href="projects/Invariant_and_equivariant_graph_networks/poster.pdf" class="btn btn-default">  Poster </a> 
+
+        </div>
+        </div><!-- end of row -->
+
+    
+    <!-- Yamkush -->
+		<div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>	
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/lifted_sinkhorn/rep.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>	
+            <div class="col-md-16">
+                <h2>Sinkhorn Algorithm for Lifted Assignment Problems</h2>
+				<p>				
+				Yam Kushinsky, Haggai Maron, Nadav Dym and Yaron Lipman<br>
+				<i>SIAM Journal on Imaging Sciences, 2019 </i> <br>
+				</p>
+				<a class="btn btn-default abstract" ptitle="Sinkhorn Algorithm for Lifted Assignment Problems" abstract="Recently, Sinkhorn&#39;s algorithm was applied for solving regularized linear programs emerging from optimal transport very efficiently. Sinkhorn&#39;s algorithm is an efficient method of projecting a positive matrix onto the polytope of doubly-stochastic matrices. It is based on alternating closed-form Bregman projections on the larger polytopes of row-stochastic and column-stochastic matrices. In this paper we generalize the Sinkhorn projection algorithm to higher dimensional polytopes originated from well-known lifted linear program relaxations of the Markov Random Field (MRF) energy minimization problem and the Quadratic Assignment Problem (QAP). We derive a closed-form projection on one-sided local polytopes which can be seen as a high-dimensional, generalized version of the row/column-stochastic polytopes. We then use these projections to devise a provably convergent algorithm to solve regularized linear program relaxations of MRF and QAP. Furthermore, as the regularization is decreased both the solution and the optimal energy value converge to that of the respective linear program. The resulting algorithm is considerably more scalable than standard linear solvers and is able to solve significantly larger linear programs. "> Abstract</a>
+				<a href="https://arxiv.org/abs/1707.07285" class="btn btn-default">  Arxiv </a>		
+				<!--<a href="index.html" class="btn btn-default">Code (coming soon)</a>-->
+		</div>
+        </div><!-- end of row -->
+    
+    
+<!--NIPS -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/concave/rep.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>(Probably) Concave Graph Matching</h2>
+                <p>             
+                Haggai Maron and Yaron Lipman<br>
+                <i>32nd Annual Conference on Neural Information Processing Systems (NeurIPS 2018)</i> <br>
+                spotlight presentation (3.5% acceptance rate) <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="In this paper we address the graph matching problem. Following the recent works of \cite{zaslavskiy2009path,Vestner2017} we analyze and generalize the idea of concave relaxations. We introduce the concepts of conditionally concave and probably conditionally concave energies on polytopes and show that they encapsulate many instances of the graph matching problem, including matching Euclidean graphs and graphs on surfaces. We further prove that local minima of probably conditionally concave energies on general matching polytopes (e.g., doubly stochastic) are with high probability extreme points of the matching polytope (e.g., permutations)."> Abstract</a>
+                <a href="https://arxiv.org/pdf/1807.09722.pdf" class="btn btn-default">  Arxiv </a> 
+                <a href="projects/concave/poster.pdf" class="btn btn-default">  Poster </a> 
+                <a href="https://youtu.be/ZsN1__FFZlk" class="btn btn-default">  Short Video </a>
+				<a href="https://github.com/Haggaim/ConcaveGraphMatching" class="btn btn-default">GitHub</a>
+        </div>
+        </div><!-- end of row -->
+
+    
+    
+        <!--Heli -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/multichart/rep.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>Multi-chart Generative Surface Modeling</h2>
+                <p>             
+                Heli Ben-Hamu, Haggai Maron, Itay Kezurer, Gal Avineri and Yaron Lipman<br>
+                <i>ACM SIGGRAPH Asia 2018</i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="new image-like (ie, tensor) data representation for genus-zero 3D shapes is devised. It is based on the observation that complicated shapes can be well represented by multiple parameterizations (charts), each focusing on a different part of the shape. The new tensor data representation is used as input to Generative Adversarial Networks for the task of 3D shape generation. The 3D shape tensor representation is based on a multi-chart structure that enjoys a shape covering property and scale-translation rigidity. Scale-translation rigidity facilitates high quality 3D shape learning and guarantees unique reconstruction. The multi-chart structure uses as input a dataset of 3D shapes (with arbitrary connectivity) and a sparse correspondence between them. The output of our algorithm is a generative model that learns the shape distribution and is able to generate novel shapes, interpolate shapes, and explore the generated shape space. The effectiveness of the method is demonstrated for the task of anatomic shape generation including human body and bone (teeth) shape generation. "> Abstract</a>
+                <a href="https://arxiv.org/pdf/1806.02143.pdf" class="btn btn-default">  Arxiv </a>  
+                <a href="https://github.com/helibenhamu/multichart3dgans" class="btn btn-default">GitHub</a>
+        </div>
+        </div><!-- end of row -->
+        
+
+    
+    
+        <!--PCNN -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>    
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/PCNN/rep.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>    
+            <div class="col-md-16">
+                <h2>Point Convolutional Neural Networks by Extension Operators</h2>
+                <p>             
+                Matan Atzmon*, Haggai Maron* and Yaron Lipman (*equal contribution)<br>
+                <i>ACM SIGGRAPH 2018</i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="This paper presents Point Convolutional Neural Networks (PCNN): a novel framework for applying convolutional neural networks to point clouds. The framework consists of two operators: extension and restriction, mapping point cloud functions to volumetric functions and vise-versa. A point cloud convolution is defined by pull-back of the Euclidean volumetric convolution via an extension-restriction mechanism. The point cloud convolution is computationally efficient, invariant to the order of points in the point cloud, robust to different samplings and varying densities, and translation invariant, that is the same convolution kernel is used at all points. PCNN generalizes image CNNs and allows readily adapting their architectures to the point cloud setting. Evaluation of PCNN on three central point cloud learning benchmarks convincingly outperform competing point cloud learning methods, and the vast majority of methods working with more informative shape representations such as surfaces and/or normals"> Abstract</a>
+                <a href="https://arxiv.org/abs/1803.10091" class="btn btn-default">  Arxiv </a>        
+                <a href="https://github.com/matanatz/pcnn" class="btn btn-default">GitHub</a>
+                <a href="projects/PCNN/pointConv_sigraph_final_pdf.pdf" class="btn btn-default">Slides</a>
+
+        </div>
+        </div><!-- end of row -->
+        
+		<!-- DSPP -->
+		<div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>	
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/DSPP/rep.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>	
+            <div class="col-md-16">
+                <h2>DS++: A Flexible, Scalable and Provably Tight Relaxation for Matching Problems</h2>
+				<p>				
+				Nadav Dym*, Haggai Maron* and Yaron Lipman (*equal contribution)<br>
+				<i>ACM SIGGRAPH ASIA 2017</i> <br>
+				</p>
+				<a class="btn btn-default abstract" ptitle="DS++: A Flexible, Scalable and Provably Tight Relaxation for Matching Problems" abstract="Correspondence problems are often modelled as quadratic optimization problems over permutations. Common scalable methods for approximating solutions of these NP-hard problems are the spectral relaxation for non-convex energies and the doubly stochastic (DS) relaxation for convex energies. Lately, it has been demonstrated that semidefinite programming relaxations can have considerably improved accuracy at the price of a much higher computational cost.We present a convex quadratic programming relaxation which is provably stronger than both DS and spectral relaxations, with the same scalability as the DS relaxation. The derivation of the relaxation also naturally suggests a projection method for achieving meaningful integer solutions which  improves upon the standard closest-permutation projection. Our method can be easily extended to optimization over doubly stochastic matrices, partial or injective matching, and problems with additional linear constraints. We employ recent advances in optimization of linear-assignment type problems to achieve an efficient algorithm for solving the convex relaxation.We present experiments indicating that our method is  more accurate than local minimization or competing relaxations for non-convex problems. We successfully apply our algorithm to shape matching and to the problem of ordering images in a grid, obtaining results which compare favorably with state of the art methods. We believe our results indicate that our method should be considered the method of choice for quadratic optimization over permutations  ">Abstract</a>
+				<a href="https://arxiv.org/abs/1705.06148" class="btn btn-default">  Arxiv </a>			
+				<a href="https://github.com/Haggaim/DSPP" class="btn btn-default">GitHub</a>
+                <a href="projects/DSPP/DSPP_ppt_sig_asia.pdf" class="btn btn-default">Slides</a>
+
+		</div>
+        </div><!-- end of row -->
+
+
+		
+		
+		
+		<div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>	
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/geometry_learning/rep.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>	
+            <div class="col-md-16">
+                <h2>Convolutional Neural Networks on Surfaces via Seamless Toric Covers</h2>
+				<p>				
+				Haggai Maron, Meirav Galun, Noam Aigerman, Miri Trope, Nadav Dym, Ersin Yumer, Vladimir G. Kim and Yaron Lipman<br>
+				<i>ACM SIGGRAPH 2017</i> <br>
+				</p>
+				<a class="btn btn-default abstract" ptitle="Convolutional Neural Networks on Surfaces via Seamless Toric Covers" abstract="The recent success of convolutional neural networks (CNNs) for image processing tasks is inspiring research efforts attempting to achieve similar success for geometric tasks. One of the main challenges in applying CNNs to surfaces is defining a natural convolution operator on surfaces. In this paper we present a method for applying deep learning to spheretype shapes using a global seamless parameterization to a planar flat-torus, for which the convolution operator is well defined. As a result, the standard deep learning framework can be readily applied for learning semantic, highlevel properties of the shape. An indication of our success in bridging the gap between images and surfaces is the fact that our algorithm succeeds in learning semantic information from an input of raw low-dimensional feature vectors. We demonstrate the usefulness of our approach by presenting two applications: human body segmentation, and automatic landmark detection on anatomical surfaces. We show that our algorithm compares favorably with competing geometric deep-learning algorithms for segmentation tasks, and is able to produce meaningful correspondences on anatomical surfaces where hand-crafted features are bound to fail. ">Abstract</a>
+				<a href="projects/geometry_learning/paper_low_res.pdf" class="btn btn-default">Paper (low res)</a>	
+				<a href="https://github.com/Haggaim/ToricCNN" class="btn btn-default">GitHub</a>
+                <a href="https://www.dropbox.com/sh/cnyccu3vtuhq1ii/AADgGIN6rKbvWzv0Sh-Kr417a?dl=0" class="btn btn-default">Data</a>
+                <a href="projects/geometry_learning/GeometryLearning_siggraph.pdf" class="btn btn-default">Slides</a>
+                <a href="https://dl.acm.org/ft_gateway.cfm?id=3073616&ftid=1918032" class="btn btn-default">Video</a>
+
+                
+		</div>
+        </div><!-- end of row -->
+		
+		<div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>	
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/point_registration/rep.png" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>	
+            <div class="col-md-16">
+                <h2>Point Registration via Efficient Convex Relaxation</h2>
+				<p>				
+				Haggai Maron, Nadav Dym, Itay Kezurer, Shahar Kovalsky and Yaron Lipman<br>
+				<i>ACM SIGGRAPH 2016 </i> <br>
+				</p>
+				<a class="btn btn-default abstract" ptitle="Point Registration via Efficient Convex Relaxation" abstract="Point cloud registration is a fundamental task in computer graphics and more specifically, in rigid and non-rigid shape matching. The rigid shape matching problem can be formulated as the problem of simultaneously aligning and labelling two point clouds in 3D so that they are as similar as possible. We name this problem the Procrustes matching (PM) problem. The non-rigid shape matching problem can be formulated as a PM problem in higher dimension using the functional maps method. High dimensional PM problems are difficult non-convex problems which currently can  only be solved locally using iterative closest point (ICP) algorithms or similar methods. So far, good initialization for the local algorithms was obtained by relying on user input. We introduce a novel and efficient convex SDP relaxation for the PM problem. We prove that for (generic) isometric or almost-isometric problems the algorithm returns a correct global solution of the problem. We show our algorithm gives state of the art results on popular shape matching datasets. We also show that our algorithm gives state of the art results for anatomical classification of shapes. Finally we demonstrate the successfulness of our method in aligning shape collections.">Abstract</a>
+				<a href="projects/point_registration/PMSDP_final_light.pdf" class="btn btn-default">Paper (low res)</a>
+
+				<a href="https://github.com/Haggaim/PM-SDP" class="btn btn-default">GitHub</a>
+				<a href="projects/point_registration/PM-SIGGRAPH_site.pptx" class="btn btn-default">Slides</a>
+                <a href="https://dl.acm.org/ft_gateway.cfm?id=2925913&ftid=1800661" class="btn btn-default">Video</a>
+                
+		</div>
+        </div><!-- end of row -->
+		
+		<div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>	
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/light_sesitive_display/rep2.png" width="100%" height="100%" alt="image 1">
+            </div>
+            <div class="col-md-1"></div>	
+            <div class="col-md-16">
+                <h2>Passive Light and Viewpoint Sensitive Display of 3D Content</h2>
+				<p>				
+				Anat Levin, Haggai Maron and Michal Yarom<br>
+				<i>International Conference on Computational Photography (ICCP) 2016</i> <br>
+				</p>
+				<a class="btn btn-default abstract" ptitle="Passive Light and Viewpoint SensitiveDisplay of 3D Content" abstract="We present a 3D light-sensitive display. The display is capable of presenting simple opaque 3Dsurfaces without self occlusions, while reproducing both viewpoint-sensitive depth parallax and illumination-sensitive variations such as shadows and highlights. Our display is passive in the sense that it does not rely on illumination sensors and on-the-fly rendering of the image content. Rather, it consists of optical elements that produce light transport paths approximating those present in the real scene. Our display uses two layers of Spatial Light Modulators (SLMs) whose micron-sized elements allow us to digitally simulate thin optical surfaces with flexible shapes. We derive a simple content creation algorithm utilizing geometric optics tools to design optical surfaces that can mimic the ray transfer of target virtual 3D scenes. We demonstrate a possible implementation of a small prototype, and present a number of simple virtual 3D scenes. ">Abstract</a>
+				<a href="projects/light_sesitive_display/LightSensitiveDisplayICCP.pdf" class="btn btn-default">Paper</a>
+				<a href="projects/light_sesitive_display/LightSensitiveDisplayICCP_extended.pdf" class="btn btn-default">Paper+Supplementary</a>
+		</div>
+        </div><!-- end of row -->
+		
+		
+</section><!-- end of templatemo_publications -->
+
+<br>
+<br>
+
+<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.scrollto.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.lightbox.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/templatemo_script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52088992-1', 'weizmann.ac.il');
+  ga('require', 'linkid', 'linkid.html');
+  ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from www.wisdom.weizmann.ac.il/~shaharko/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Apr 2016 11:56:56 GMT -->
+</html>
