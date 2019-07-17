@@ -1,9 +1,4 @@
-# Invariant Graph Networks
-Haggai Maron and Yaron Lipman
-
-*Weizmann Institute of Science*
-$$ f=\alpha $$
-This note summarizes the main ideas and constructions in a series of three recent papers [Maron et al., 2019 a,b,c] introducing and investigating a novel type of neural networks for learning irregular data such as graphs and hypergraphs.  
+This $$ f=\alpha $$ note summarizes the main ideas and constructions in a series of three recent papers [Maron et al., 2019 a,b,c] introducing and investigating a novel type of neural networks for learning irregular data such as graphs and hypergraphs.  
 
 ## Algebraic view of convolutional neural networks.
 The goal of this note is presenting a family of neural network architectures suitable for learning irregular data in the form of graphs, or more generally, hypergraphs. This family presents a tradeoff between expressivity (i.e., the ability to approximate a large and complicated set of functions), and efficiency (i.e., the amount of time and space resources used by these architectures).
@@ -37,6 +32,8 @@ A simple and expressive variant of IGNs. The main drawback of -IGNs is the fact 
 Note that applying an MLP to the feature dimension can be seen as a particular simplified instance of IGN, using only a single linear equivariant operator, namely, scaled identity. When the feature dimension is one, scaled identity is a linear operator that takes as input  and outputs , . When the feature dimension of  is greater than one,  becomes a matrix that is applied to the feature dimension. 
 Let us provide some intuition as to why matrix multiplication improves expressiveness. We will do that by showing matrix multiplication allows this model to distinguish between the two regular graphs discussed above, which are 1-WL (and 2-WL) indistinguishable. Consider the case the input tensor  representing a graph  holds the adjacency matrix. We can build a network with 2 blocks computing  and then take the trace of this matrix (using the invariant layer). Recall that the -th power of the adjacency matrix computes the number of -paths between vertices; in particular,  computes the number of cycles of length 3. Counting shows the right graph has 0 such cycles while the left graph has 12. 
 Summary of the IGN expressiveness. The following figure illustrates the expressiveness results for IGNs. It provides an overview of the main tradeoffs between efficiency and approximation power.
+
+Written by Haggai Maron and Yaron Lipman, *Weizmann Institute of Science*
 
 ## Bibliography
 
