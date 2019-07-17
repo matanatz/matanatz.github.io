@@ -2,7 +2,7 @@
 Haggai Maron and Yaron Lipman
 
 *Weizmann Institute of Science*
-$f=\alpha$
+$$ f=\alpha $$
 This note summarizes the main ideas and constructions in a series of three recent papers [Maron et al., 2019 a,b,c] introducing and investigating a novel type of neural networks for learning irregular data such as graphs and hypergraphs.  
 
 ## Algebraic view of convolutional neural networks.
