@@ -1,3 +1,5 @@
+This is the second post summarizing the main ideas and constructions in a series of three recent papers (Maron et al., 2019 a,b,c). In this post we focus on (Maron et al., 2019b) that was presented at ICML 2019 and  an additional technical report (Maron et al., 2019c).
+
 Up until now, we have discussed a principled way of constructing invariant graph networks. Our next step is analyzing the expressive power of these models. Expressivity of graph neural networks is studied from different perspectives (Chen et al., 2019). In (Maron et al., 2019a,b) we studied the question: what kind of functions can IGNs approximate? More recently, in (Maron et al., 2019c), we study the capability of IGNs to discriminate non-isomorphic graphs. When we say that a model can discriminate between two non-isomorphic graphs  we mean that there is a set of parameters for the IGN model that results in a function  with the property . Remember that by construction  if  are isomorphic.
 
 ## Function approximation point of view
