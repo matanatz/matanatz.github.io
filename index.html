@@ -81,6 +81,7 @@
                 <p>
                 <h4>News</h4>
                 <ul>
+                <li>September 2019: Our paper "Provably Powerful Graph Networks" was accepted to NeurIPS 2019!</li>
                 <li>August 2019: Ph.D. thesis submitted! </li>    
                 <li>July 2019: Check out our new <a href="http://irregulardeep.org/">blog</a> on deep learning of irregular data! Our first two blog posts explain <b> Invariant Graph Networks (IGNs)</b> and their power. These posts summarize our ICLR 2019 and ICML 2019 papers and a recent technical report.</li>
                 <li>June 2019: I was selected to participate in the <a href="https://s2019.siggraph.org/conference/programs-events/organization-events/doctoral-consortium/">SIGGRAPH 2019 Doctoral Consortium</a>. </li>
@@ -145,7 +146,7 @@
                 <h2>Provably Powerful Graph Networks	</h2>
                 <p>             
                 Haggai Maron*, Heli Ben-Hamu*, Hadar Serviansky*, Yaron Lipman (*equal contribution)<br>
-                <i> Technical report 2019 </i> <br>
+                <i> 33rd Annual Conference on Neural Information Processing Systems (NeurIPS 2019) </i> <br>
                 </p>
                 <a class="btn btn-default abstract" ptitle="Recently, the Weisfeiler-Lehman (WL) graph isomorphism test was used to measure the expressive power of graph neural networks (GNN). It was shown that the popular message passing GNN cannot distinguish between graphs that are indistinguishable by the 1-WL test (Morris et al., 2018; Xu et al., 2019). Unfortunately, many simple instances of graphs are indistinguishable by the 1-WL test. In search for more expressive graph learning models we build upon the recent k-order invariant and equivariant graph neural networks (Maron et al., 2019a,b) and present two results: First, we show that such k-order networks can distinguish between non-isomorpic graphs as good as the k-WL tests, which are provably stronger than the 1-WL test for k > 2. This makes these models strictly stronger than message passing models. Unfortunately, the higher expressiveness of these models comes with a computational cost of processing high order tensors. Second, setting our goal at building a provably stronger, simple and scalable model we show that a reduced 2-order network containing just scaled identity operator, augmented with a single quadratic operation (matrix multiplication) has a provable 3-WL expressive power. Differently put, we suggest a simple model that interleaves applications of standard Multilayer-Perceptron (MLP) applied to the feature dimension and matrix multiplication. We validate this model by presenting state of the art results on popular graph classification and regression tasks. To the best of our knowledge, this is the first practical invariant/equivariant model with guaranteed 3-WL expressiveness, strictly stronger than message passing models. "> Abstract</a>
                 <a href="https://arxiv.org/abs/1905.11136" class="btn btn-default">Arxiv </a>
@@ -165,7 +166,7 @@
                 <h2>Controlling Neural Level Sets	</h2>
                 <p>             
                 Matan Atzmon*, Niv Haim*, Lior Yariv, Ofer Israelov, Haggai Maron, Yaron Lipman (*equal contribution)<br>
-                <i>  </i> <br>
+                <i> Technical report 2019 </i> <br>
                 </p>
                 <a class="btn btn-default abstract" ptitle="The level sets of neural networks represent fundamental properties such as decision boundaries of classifiers and are used to model non-linear manifold data such as curves and surfaces. Thus, methods for controlling the neural level sets could find many applications in machine learning. In this paper we present a simple and scalable approach to directly control level sets of a deep neural network. Our method consists of two parts: (i) sampling of the neural level sets, and (ii) relating the samples’ positions to the network parameters. The latter is achieved by a sample network that is constructed by adding a single fixed linear layer to the original network. In turn, the sample network can be used to incorporate the level set samples into a loss function of interest. We have tested our method on three different learning tasks:  raining networks robust to adversarial attacks, improving generalization to unseen data, and curve and surface reconstruction from point clouds. Notably, we increase robust accuracy to the level of standard classification accuracy in off-the-shelf networks, improving it by 2% in MNIST and 27% in CIFAR10 compared to state-of-the-art methods. For surface reconstruction, we produce high fidelity surfaces directly from raw 3D point clouds."> Abstract</a>
                 <a href="https://arxiv.org/abs/1905.11911" class="btn btn-default">Arxiv </a>        
