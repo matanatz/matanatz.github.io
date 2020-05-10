@@ -97,89 +97,24 @@
 
 
       </div>
-      <!--Open problems -->
+
+
+
+   <!--udr -->
       <div class="row" id="templatemo_publications_LargeScaleBD">
           <div class="col-md-1"></div>
           <div class="col-md-5 col-sm-7 col-xs-24">
-              <img src="projects/DA_3D_SSL/img.png" width="450" " alt="">
+              <img src="projects/udr/udr.png"  alt="">
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-16">
-              <h2>Self-Supervised Learning for Domain Adaptation on Point-Clouds</h2>
+              <h2>Universal Differentiable Renderer for Implicit Neural Representations</h2>
               <p>
-                Idan Achituve, Haggai Maron, Gal Chechik<br>
-              <i>Preprint, 2020</i> <br>
+                Lior Yariv, Matan Atzmon, Yaron Lipman<br>
+              <i>Technical report</i> <br>
               </p>
-              <a class="btn btn-default abstract" ptitle="
-Abstract. Self-supervised learning (SSL) allows to learn useful repre- sentations from unlabeled data and has been applied effectively for do- main adaptation (DA) on images. It is still unknown if and how it can be leveraged for domain adaptation for 3D perception. Here we describe the first study of SSL for DA on point-clouds. We introduce a new pretext task, Region Reconstruction, motivated by the deformations encountered in sim-to-real transformation. We also demonstrate how it can be com- bined with a training procedure motivated by the MixUp method. Eval- uations on six domain adaptations across synthetic and real furniture data, demonstrate large improvement over previous work."> Abstract</a>
-              <a href="https://arxiv.org/pdf/2003.12641.pdf" class="btn btn-default">Paper </a>
-              <a href="https://github.com/idanachi/RegRec_and_PCM" class="btn btn-default">GitHub </a>
-
-
-
-
-          </div>
-      </div><!-- end of row -->
-
-
-      </div>
-   <!--Open problems -->
-      <div class="row" id="templatemo_publications_LargeScaleBD">
-          <div class="col-md-1"></div>
-          <div class="col-md-5 col-sm-7 col-xs-24">
-              <img src="projects/DSS/img.png" width="450" " alt="">
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-16">
-              <h2>On Learning Sets of Symmetric Elements</h2>
-              <p>
-                Haggai Maron, Or Litany, Gal Chechik, Ethan Fetaya<br>
-              <i>Preprint, 2020</i> <br>
-              </p>
-              <a class="btn btn-default abstract" ptitle="Learning from unordered sets is a fundamental learning setup, which is attracting increasing attention. Research in this area has focused on the case where elements of the set are represented by feature vectors, and far less emphasis has been given to the common case where set elements themselves adhere to certain symmetries. That case is relevant to numerous applications, from deblurring image bursts to multi-view 3D shape recognition and reconstruction. In this paper, we present a principled approach to learning sets of general symmetric elements. We first characterize the space of linear layers that are equivariant both to element reordering and to the inherent symmetries of elements, like translation in the case of images. We further show that networks that are composed of these layers, called Deep Sets for Symmetric elements layers (DSS), are universal approximators of both invariant and equivariant functions. DSS layers are also straightforward to implement. Finally, we show that they improve over existing set-learning architectures in a series of experiments with images, graphs, and point-clouds"> Abstract</a>
-              <a href="https://arxiv.org/pdf/2002.08599" class="btn btn-default">Paper </a>
-          </div>
-  </div><!-- end of row -->
-
-
-
-      </div>
-   <!--Open problems -->
-      <div class="row" id="templatemo_publications_LargeScaleBD">
-          <div class="col-md-1"></div>
-          <div class="col-md-5 col-sm-7 col-xs-24">
-              <img src="projects/GNN_AMG/img.png" width="450" " alt="">
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-16">
-              <h2>Learning Algebraic Multigrid Using Graph Neural Networks</h2>
-              <p>
-              Ilay Luz, Meirav Galun, Haggai Maron, Ronen Basri, Irad Yavneh<br>
-              <i>Preprint, 2020</i> <br>
-              </p>
-              <a class="btn btn-default abstract" ptitle="Efficient numerical solvers for sparse linear systems are crucial in science and engineering. One of the fastest methods for solving large-scale sparse linear systems is algebraic multigrid (AMG). The main challenge in the construction of AMG algorithms is the selection of the prolongation operator--a problem-dependent sparse matrix which governs the multiscale hierarchy of the solver and is critical to its efficiency. Over many years, numerous methods have been developed for this task, and yet there is no known single right answer except in very special cases. Here we propose a framework for learning AMG prolongation operators for linear systems with sparse symmetric positive (semi-) definite matrices. We train a single graph neural network to learn a mapping from an entire class of such matrices to prolongation operators, using an efficient unsupervised loss function. Experiments on a broad class of problems demonstrate improved convergence rates compared to classical AMG, demonstrating the potential utility of neural networks for developing sparse system solvers."> Abstract</a>
-              <a href="https://arxiv.org/pdf/2003.05744" class="btn btn-default">Paper </a>
-          </div>
-  </div><!-- end of row -->
-
-
-
-      </div>
-   <!--Open problems -->
-      <div class="row" id="templatemo_publications_LargeScaleBD">
-          <div class="col-md-1"></div>
-          <div class="col-md-5 col-sm-7 col-xs-24">
-              <img src="projects/set2graph/img.png" width="450" " alt="">
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-16">
-              <h2>Set2Graph: Learning Graphs From Sets</h2>
-              <p>
-                Hadar Serviansky, Nimrod Segol, Jonathan Shlomi, Kyle Cranmer, Eilam Gross, Haggai Maron, Yaron Lipman<br>
-              <i>Preprint, 2020</i> <br>
-              </p>
-              <a class="btn btn-default abstract" ptitle="Many problems in machine learning (ML) can be cast as learning functions from sets to graphs, or more generally to hypergraphs; in short, Set2Graph functions. Examples include clustering, learning vertex and edge features on graphs, and learning triplet data in a collection. Current neural network models that approximate Set2Graph functions come from two main ML sub-fields: equivariant learning, and similarity learning. Equivariant models would be in general computationally challenging or even infeasible, while similarity learning models can be shown to have limited expressive power. In this paper we suggest a neural network model family for learning Set2Graph functions that is both practical and of maximal expressive power (universal), that is, can approximate arbitrary continuous Set2Graph functions over compact sets. Testing our models on different machine learning tasks, including an application to particle physics, we find them favorable to existing baselines."> Abstract</a>
-              <a href="https://arxiv.org/abs/2002.08772" class="btn btn-default">Paper </a>
+              <a class="btn btn-default abstract" ptitle="The goal of this work is to learn implicit 3D shape representation with 2D supervision (\ie, a collection of images).  To that end we introduce the Universal Differentiable Renderer (UDR) a neural network architecture that can provably approximate reflected light from an implicit neural representation of a 3D surface, under a wide set of reflectance properties and lighting conditions. Experimenting with the task of multiview 3D reconstruction, we find our model to improve upon the baselines in the accuracy of the reconstructed 3D geometry and rendering from unseen viewing directions."> Abstract</a>
+              <a href="https://arxiv.org/abs/2003.09852" class="btn btn-default">Arxiv </a>
           </div>
   </div><!-- end of row -->
 
@@ -188,90 +123,43 @@ Abstract. Self-supervised learning (SSL) allows to learn useful repre- sentation
 
 
         </div>
-     <!--Open problems -->
+     <!--igr -->
         <div class="row" id="templatemo_publications_LargeScaleBD">
             <div class="col-md-1"></div>
             <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="projects/open_problems_igns/open_problems.png" width="450" " alt="">
+                <img src="projects/igr/igr.png"  alt="">
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-16">
-                <h2>Open Problems: Approximation Power of Invariant Graph Networks</h2>
+                <h2>Implicit Geometric Regularization for Learning Shapes</h2>
                 <p>
-                Haggai Maron, Heli Ben-Hamu, Yaron Lipman<br>
-                <i>  NeurIPS 2019 Graph Representation Learning Workshop</i> <br>
+                Amos Gropp, Lior Yariv, Niv Haim, Matan Atzmon, Yaron Lipman<br>
+                <i>  Technical report</i> <br>
                 </p>
-                <a class="btn btn-default abstract" ptitle="Learning graph data is of huge interest to the machine learning community. Recently, graph neural network models motivated by algebraic invariance and equivariance principles have been proposed (Ravanbakhsh et al., 2017; Kondor et al., 2018; Maron et al., 2019b). These models were shown to be universal (Maron et al., 2019c; Keriven and Peyré, 2019), in contrast to the popular message passing models Xu et al. (2019); Morris et al. (2018). In this note we formulate several open problems aiming at characterizing the trade-off between expressive power and complexity of these models."> Abstract</a>
-                <a href="projects/open_problems_igns/Open Problems Approximation Power of InvariantGraph Networks.pdf" class="btn btn-default">Paper </a>
-                <a href="projects/open_problems_igns/NeurIPS_graph_representation_learning_workshop.pdf" class="btn btn-default">Slides </a>
-                <a href="https://slideslive.com/38921870/graph-representation-learning-1" class="btn btn-default">Talk (go to 1:15:00) </a>
+                <a class="btn btn-default abstract" ptitle="Representing shapes as level sets of neural networks has been recently proved to be useful for different shape analysis and reconstruction tasks. So far, such representations were computed using either: (i) pre-computed implicit shape representations; or (ii) loss functions explicitly defined over the neural level sets. In this paper we offer a new paradigm for computing high fidelity implicit neural representations directly from raw data (ie, point clouds, with or without normal information). We observe that a rather simple loss function, encouraging the neural network to vanish on the input point cloud and to have a unit norm gradient, possesses an implicit geometric regularization property that favors smooth and natural zero level set surfaces, avoiding bad zero-loss solutions. We provide a theoretical analysis of this property for the linear case, and show that, in practice, our method leads to state of the art implicit neural representations with higher level-of-details and fidelity compared to previous methods."> Abstract</a>
+                <a href="https://arxiv.org/abs/2002.10099" class="btn btn-default">Arxiv </a>
             </div>
     </div><!-- end of row -->
 
   </div>
-   <!--Deep and Convex -->
-      <div class="row" id="templatemo_publications_LargeScaleBD">
-          <div class="col-md-1"></div>
-          <div class="col-md-5 col-sm-7 col-xs-24">
-              <img src="projects/phd_thesis/image.png" width="450" " alt="">
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-16">
-              <h2>Ph.D. Thesis</h2>
-              <p>
-              Haggai Maron<br>
-              <i> Weizmann Institute of Science, 2019 </i> <br>
-              </p>
-              <a class="btn btn-default abstract" ptitle="This dissertation summarizes the main results obtained during my Ph.D. studies at the Weizmann Institute of Science under the guidance of Professor Yaron Lipman. Two fundamental problems in shape analysis were considered: (1) how to apply deep learning techniques to irregular data and (2) how to compute meaningful maps between shapes. My work has resulted in several novel methods for applying deep learning to surfaces, point clouds (i.e., finite subsets of the Euclidean space), graphs and hyper-graphs as well as new efficient techniques to solve relaxations of well-known matching problems. The report discusses these two problems, surveys the suggested solutions and points out several directions for future work, including a promising direction that combines both problems."> Abstract</a>
-              <a href="projects/phd_thesis/haggai_maron_phd_thesis.pdf" class="btn btn-default">Paper </a>
+   
 
-          </div>
-  </div><!-- end of row -->
-
-
-
-
-
-
-		</div>
-     <!--Deep and Convex -->
+ <!--sal -->
         <div class="row" id="templatemo_publications_LargeScaleBD">
             <div class="col-md-1"></div>
             <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="projects/SIGGRAPH_DC/teaser.jpg" width="450" " alt="">
+                <img src="projects/sal/sal.gif" alt="">
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-16">
-                <h2>Deep and Convex Shape Analysis</h2>
+                <h2>SAL: Sign Agnostic Learning of Shapes from Raw Data	</h2>
                 <p>
-                Haggai Maron<br>
-                <i> SIGGRAPH 2019 Doctoral Consortium </i> <br>
+                Matan Atzmon and Yaron Lipman<br>
+                <i> Computer Vision and Pattern Recognition (CVPR) 2020, oral presentation </i> <br>
                 </p>
-                <a class="btn btn-default abstract" ptitle="In this paper, I review the main results obtained during my Ph.D. studies at the Weizmann Institute of Science under the guidance of Professor Yaron Lipman. Two fundamental problems in shape analysis were considered: (1) how to apply deep learning techniques to geometric objects and (2) how to compute meaningful maps between shapes. My work has resulted in several novel methods for applying deep learning to surfaces, point clouds, and hyper-graphs as well as new efficient techniques to solve relaxations of wellknown matching problems. The paper discusses these two problems, surveys the suggested solutions and points out several directions for future work, including a promising direction that combines both problems."> Abstract</a>
-                <a href="projects/SIGGRAPH_DC/SIGGRAPH_doctoral_consortium.pdf" class="btn btn-default">Paper </a>                                <a href="projects/SIGGRAPH_DC/poster.pdf" class="btn btn-default">Poster </a>
-
-            </div>
-    </div><!-- end of row -->
-
- <!--provably powerful -->
-        <div class="row" id="templatemo_publications_LargeScaleBD">
-            <div class="col-md-1"></div>
-            <div class="col-md-5 col-sm-7 col-xs-24">
-                <img src="projects/powerful_graph/2019_powerful_gnn_.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-16">
-                <h2>Provably Powerful Graph Networks	</h2>
-                <p>
-                Haggai Maron*, Heli Ben-Hamu*, Hadar Serviansky*, Yaron Lipman (*equal contribution)<br>
-                <i> 33rd Annual Conference on Neural Information Processing Systems (NeurIPS 2019) </i> <br>
-                </p>
-                <a class="btn btn-default abstract" ptitle="Recently, the Weisfeiler-Lehman (WL) graph isomorphism test was used to measure the expressive power of graph neural networks (GNN). It was shown that the popular message passing GNN cannot distinguish between graphs that are indistinguishable by the 1-WL test (Morris et al., 2018; Xu et al., 2019). Unfortunately, many simple instances of graphs are indistinguishable by the 1-WL test. In search for more expressive graph learning models we build upon the recent k-order invariant and equivariant graph neural networks (Maron et al., 2019a,b) and present two results: First, we show that such k-order networks can distinguish between non-isomorpic graphs as good as the k-WL tests, which are provably stronger than the 1-WL test for k > 2. This makes these models strictly stronger than message passing models. Unfortunately, the higher expressiveness of these models comes with a computational cost of processing high order tensors. Second, setting our goal at building a provably stronger, simple and scalable model we show that a reduced 2-order network containing just scaled identity operator, augmented with a single quadratic operation (matrix multiplication) has a provable 3-WL expressive power. Differently put, we suggest a simple model that interleaves applications of standard Multilayer-Perceptron (MLP) applied to the feature dimension and matrix multiplication. We validate this model by presenting state of the art results on popular graph classification and regression tasks. To the best of our knowledge, this is the first practical invariant/equivariant model with guaranteed 3-WL expressiveness, strictly stronger than message passing models. "> Abstract</a>
-                <a href="https://arxiv.org/abs/1905.11136" class="btn btn-default">Arxiv </a>
-                <a href="https://github.com/hadarser/ProvablyPowerfulGraphNetworks" class="btn btn-default">  GitHub (TensorFlow) </a>
-                <a href="https://github.com/hadarser/ProvablyPowerfulGraphNetworks_torch" class="btn btn-default">  GitHub (PyTorch)</a>
-                <a href="http://irregulardeep.org/How-expressive-are-Invariant-Graph-Networks-(2-2)/" class="btn btn-default">  Blog post </a>
-                <a href="projects/powerful_graph/Provably_Powerful_Graph_Networks___Poster.pdf" class="btn btn-default">Poster </a>
+                <a class="btn btn-default abstract" ptitle="Recently, neural networks have been used as implicit representations for surface reconstruction, modelling, learning, and generation.  So far, training neural networks to be implicit representations of surfaces required training data sampled from a ground-truth signed implicit functions such as signed distance or occupancy functions, which are notoriously hard to compute. In this paper we introduce Sign Agnostic Learning (SAL), a deep learning approach for learning implicit shape representations directly from raw, unsigned geometric data, such as point clouds and triangle soups. We have tested SAL on the challenging problem of surface reconstruction from an un-oriented point cloud, as well as end-to-end human shape space learning directly from raw scans dataset, and achieved state of the art reconstructions compared to current approaches. We believe SAL opens the door to many geometric deep learning applications with real-world data, alleviating the usual painstaking, often manual pre-process. "> Abstract</a>
+                <a href="https://arxiv.org/abs/1911.10414" class="btn btn-default">Arxiv </a>
+                <a href="https://github.com/matanatz/SAL" class="btn btn-default">  Code </a>
 
 
 
