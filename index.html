@@ -99,7 +99,49 @@
       </div>
 
 
-
+    <!--iso -->
+        <div class="row" id="templatemo_publications_LargeScaleBD">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-sm-7 col-xs-24">
+                <img src="projects/iso/iso.png"  alt="">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-16">
+                <h2>Isometric Autoencoders</h2>
+                <p>
+                  Matan Atzmon*, Amos Gropp*, Yaron Lipman (*equal contribution)<br>
+                <i>Technical report</i> <br>
+                </p>
+                <a class="btn btn-default abstract" ptitle="High dimensional data is often assumed to be concentrated near a
+                low-dimensional manifold. Autoencoders (AE) is a popular technique to learn
+                representations of such data by pushing it through a neural network with a low
+                dimension bottleneck while minimizing a reconstruction error. Using high
+                capacity AE often leads to a large collection of minimizers, many of which
+                represent a low dimensional manifold that fits the data well but generalizes
+                poorly.
+                 Two sources of bad generalization are: extrinsic, where the learned manifold
+                possesses extraneous parts that are far from the data; and intrinsic, where the
+                encoder and decoder introduce arbitrary distortion in the low dimensional
+                parameterization. An approach taken to alleviate these issues is to add a
+                regularizer that favors a particular solution; common regularizers promote
+                sparsity, small derivatives, or robustness to noise.
+                 In this paper, we advocate an isometry (ie, distance preserving) regularizer.
+                Specifically, our regularizer encourages: (i) the decoder to be an isometry;
+                and (ii) the encoder to be a pseudo-isometry, where pseudo-isometry is an
+                extension of an isometry with an orthogonal projection operator. In a nutshell,
+                (i) preserves all geometric properties of the data such as volume, length,
+                angle, and probability density. It fixes the intrinsic degree of freedom since
+                any two isometric decoders to the same manifold will differ by a rigid motion.
+                (ii) Addresses the extrinsic degree of freedom by minimizing derivatives in
+                orthogonal directions to the manifold and hence disfavoring complicated
+                manifold solutions. Experimenting with the isometry regularizer on
+                dimensionality reduction tasks produces useful low-dimensional data
+                representations, while incorporating it in AE models leads to an improved
+                generalization."> Abstract</a>
+                <a href="https://arxiv.org/abs/2006.09289" class="btn btn-default">Arxiv </a>
+            </div>
+    </div><!-- end of row -->
+        
    <!--udr -->
       <div class="row" id="templatemo_publications_LargeScaleBD">
           <div class="col-md-1"></div>
