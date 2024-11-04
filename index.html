@@ -68,12 +68,8 @@
                 I am a research scientist at NVIDIA, part of the <a href=https://nv-tlabs.github.io>Toronto AI Lab</a>. 
                 Prior to that, I completed my Ph.D. studies at the Department of Computer Science and Applied Mathematics at the Weizmann Institute of Science under the supervision of <a href="http://www.wisdom.weizmann.ac.il/~ylipman/">Prof. Yaron Lipman</a>.
                     <br>
-                My main research interests are developing 3D deep learning methods, learning with weak supervision, and equivariant network design.
+                My main research interests are developing 3D deep learning methods, learning with weak supervision, generative modeling, and equivariant network design.
                 <br>
-
-                
-		
-
                 </p>
                 <br>
                 
@@ -100,7 +96,76 @@
 
 
       </div>
-    
+   
+      <!--rematching -->
+   <div class="row" id="templatemo_publications_LargeScaleBD">
+    <div class="col-md-1"></div>
+    <div class="col-md-5 col-sm-7 col-xs-24">
+        <img src="projects/rematching/lego.gif"  alt="">
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-16">
+        <h2>ReMatching Dynamic Reconstruction Flow</h2>
+        <p>
+            Sara Oblak, Despoina Paschalidou, Sanja Fidler, Matan Atzmon<br>
+        <i>Preprint</i> <br>
+        </p>
+        <a class="btn btn-default abstract" ptitle="Reconstructing dynamic scenes from image inputs is a fundamental computer vision task with many downstream applications. Despite recent advancements, existing approaches still struggle to achieve high-quality reconstructions from unseen viewpoints and timestamps. This work introduces the ReMatching framework, designed to improve generalization quality by incorporating deformation priors into dynamic reconstruction models. Our approach advocates for velocity-field-based priors, for which we suggest a matching procedure that can seamlessly supplement existing dynamic reconstruction pipelines. The framework is highly adaptable and can be applied to various dynamic representations. Moreover, it supports integrating multiple types of model priors and enables combining simpler ones to create more complex classes. Our evaluations on popular benchmarks involving both synthetic and real-world dynamic scenes demonstrate a clear improvement in reconstruction accuracy of current state-of-the-art models."> Abstract</a>
+        <a href="https://arxiv.org/abs/2411.00705" class="btn btn-default">Arxiv </a> <a href="https://research.nvidia.com/labs/toronto-ai/ReMatchingDynamicReconstructionFlow/" class="btn btn-default">Project </a>
+    </div>
+</div><!-- end of row -->   
+   <!--spacemesh -->
+   <div class="row" id="templatemo_publications_LargeScaleBD">
+    <div class="col-md-1"></div>
+    <div class="col-md-5 col-sm-7 col-xs-24">
+        <img src="projects/spacemesh/teaser.jpg"  alt="">
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-16">
+        <h2>SpaceMesh: A Continuous Representation for Learning Manifold Surface Meshes</h2>
+        <p>
+            Tianchang Shen, Zhaoshuo Li, Marc Law, Matan Atzmon, Sanja Fidler, James Lucas, Jun Gao, Nicholas Sharp<br>
+        <i>SIGGRAPH Asia 2024</i> <br>
+        </p>
+        <a class="btn btn-default abstract" ptitle="Meshes are ubiquitous in visual computing and simulation, yet most existing machine learning techniques represent meshes only indirectly, e.g. as the level set of a scalar field or deformation of a template, or as a disordered triangle soup lacking local structure. This work presents a scheme to directly generate manifold, polygonal meshes of complex connectivity as the output of a neural network. Our key innovation is to define a continuous latent connectivity space at each mesh vertex, which implies the discrete mesh. In particular, our vertex embeddings generate cyclic neighbor relationships in a halfedge mesh representation, which gives a guarantee of edge-manifoldness and the ability to represent general polygonal meshes. This representation is well-suited to machine learning and stochastic optimization, without restriction on connectivity or topology. We first explore the basic properties of this representation, then use it to fit distributions of meshes from large datasets. The resulting models generate diverse meshes with tessellation structure learned from the dataset population, with concise details and high-quality mesh elements. In applications, this approach not only yields high-quality outputs from generative models, but also enables directly learning challenging geometry processing tasks such as mesh repair."> Abstract</a>
+        <a href="https://arxiv.org/abs/2409.20562" class="btn btn-default">Arxiv </a> <a href="https://research.nvidia.com/labs/toronto-ai/space-mesh/" class="btn btn-default">Project </a>
+    </div>
+</div><!-- end of row -->   
+    <!--apen -->
+    <div class="row" id="templatemo_publications_LargeScaleBD">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 col-sm-7 col-xs-24">
+            <img src="projects/apen/fig.png"  alt="">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-16">
+            <h2>Approximately Piecewise E (3) Equivariant Point Networks</h2>
+            <p>
+                Matan Atzmon, Jiahui Huang, Francis Williams, Or Litany<br>
+            <i>International Conference on Learning Representations (ICLR) 2024</i> <br>
+            </p>
+            <a class="btn btn-default abstract" ptitle="Integrating a notion of symmetry into point cloud neural networks is a provably effective way to improve their generalization capability. Of particular interest are E(3) equivariant point cloud networks where Euclidean transformations applied to the inputs are preserved in the outputs. Recent efforts aim to extend networks that are E(3) equivariant, to accommodate inputs made of multiple parts, each of which exhibits local E(3) symmetry. In practical settings, however, the partitioning into individually transforming regions is unknown a priori. Errors in the partition prediction would unavoidably map to errors in respecting the true input symmetry. Past works have proposed different ways to predict the partition, which may exhibit uncontrolled errors in their ability to maintain equivariance to the actual partition. To this end, we introduce APEN: a general framework for constructing approximate piecewise-E(3) equivariant point networks. Our primary insight is that functions that are equivariant with respect to a finer partition will also maintain equivariance in relation to the true partition. Leveraging this observation, we propose a design where the equivariance approximation error at each layers can be bounded solely in terms of (i) uncertainty quantification of the partition prediction, and (ii) bounds on the probability of failing to suggest a proper subpartition of the ground truth one. We demonstrate the effectiveness of APEN using two data types exemplifying part-based symmetry: (i) real-world scans of room scenes containing multiple furniture-type objects; and, (ii) human motions, characterized by articulated parts exhibiting rigid movement. Our empirical results demonstrate the advantage of integrating piecewise E(3) symmetry into network design, showing a distinct improvement in generalization compared to prior works for both classification and segmentation tasks."> Abstract</a>
+            <a href="https://arxiv.org/abs/2402.08529" class="btn btn-default">Arxiv </a> <a href="https://research.nvidia.com/labs/toronto-ai/apen/index.html" class="btn btn-default">Project </a> <a href="https://www.youtube.com/watch?v=gHqQMaZZIGQ" class="btn btn-default">Short Video </a> <a href="https://www.youtube.com/watch?v=7apFfjpQA6o" class="btn btn-default">Seminar Recording </a>
+        </div>
+    </div><!-- end of row -->
+    <!--Neural kernel surface reconstruction -->
+    <div class="row" id="templatemo_publications_LargeScaleBD">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 col-sm-7 col-xs-24">
+            <img src="projects/nksr/nksr.png"  alt="">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-16">
+            <h2>Neural Kernel Surface Reconstruction</h2>
+            <p>
+                Jiahui Huang, Zan Gojcic, Matan Atzmon, Or Litany, Sanja Fidler, Francis Williams<br>
+            <i>Computer Vision and Pattern Recognition (CVPR) 2023, highlight paper</i> <br>
+            </p>
+            <a class="btn btn-default abstract" ptitle="We present a novel method for reconstructing a 3D implicit surface from a large-scale, sparse, and noisy point cloud. Our approach builds upon the recently introduced Neural Kernel Fields (NKF) representation. It enjoys similar generalization capabilities to NKF, while simultaneously addressing its main limitations: (a) We can scale to large scenes through compactly supported kernel functions, which enable the use of memory-efficient sparse linear solvers. (b) We are robust to noise, through a gradient fitting solve. (c) We minimize training requirements, enabling us to learn from any dataset of dense oriented points, and even mix training data consisting of objects and scenes at different scales. Our method is capable of reconstructing millions of points in a few seconds, and handling very large scenes in an out-of-core fashion. We achieve state-of-the-art results on reconstruction benchmarks consisting of single objects, indoor scenes and outdoor scenes."> Abstract</a>
+            <a href="https://arxiv.org/abs/2305.19590" class="btn btn-default">Arxiv </a> <a href="https://research.nvidia.com/labs/toronto-ai/NKSR/" class="btn btn-default">Project </a> <a href="https://www.youtube.com/watch?v=J1V5F2z-dWY" class="btn btn-default">Video </a>
+        </div>
+    </div><!-- end of row -->
+
       <!--phd -->
     <div class="row" id="templatemo_publications_LargeScaleBD">
         <div class="col-md-1"></div>
@@ -112,7 +177,7 @@
             <h2>Ph.D. Thesis</h2>
             <p>
             Matan Atzmon<br>
-            <i>Weizmann Institue of Science, 2022</i> <br>
+            <i>Weizmann Institute of Science, 2022</i> <br>
             </p>
             <a href="https://drive.google.com/file/d/1OUrtKns2dktl1q6N0fubh0RHWmjYp140/view?usp=share_link" class="btn btn-default">Paper </a> 
         </div>
